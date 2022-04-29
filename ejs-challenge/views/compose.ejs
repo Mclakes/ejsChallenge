@@ -1,0 +1,30 @@
+<%- include("partials/header"); -%>
+
+<h1>COMPOSE</h1>
+<form class="" action="/compose" method="post">
+
+    <!-- postbody -->
+
+    <div class="form-group">
+        <label for="title">Title</label><br>
+        <input class="form-control" type="text" name="postTitle" value="">
+    </div>
+
+    <!-- post text area -->
+    
+    <div class="form-group">
+        <label for="postBody">Post</label><br>
+        <textarea class="form-control" name="postBody" id="s" cols="60" rows="5" placeholder="write in here"></textarea>
+    </div>
+
+    <!-- check out box -->
+
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="c">
+        <label for="c">Check me out here</label>
+    </div>
+
+    <button class="btn btn-primary" type="submit">Publish</button>
+</form>
+
+<%- include("partials/footer"); -%>
